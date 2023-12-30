@@ -1,0 +1,17 @@
+<div id="courses">
+    <div id="intro">
+        <h1>Discover Our Courses</h1>
+        <button class="buttons">View More</button>
+    </div>
+    <div id="myCourses">
+        <div id="course" *ngFor="let course of Courses" appZoomHover> 
+            <img src={{course.image}} alt="Course Image">
+            <h3>{{course.name}}</h3>
+            <h4>{{course.price|price}}</h4>
+        </div>
+
+    </div>
+    
+   
+</div>
+
